@@ -1,4 +1,4 @@
-# pset4
+# Pset4
 Tiny Play Station4 Emulator
 
 [<u>**PSET4 Development Blog: ELF Loader and Dynamic Linker.**</u>](https://shawntsh1229.github.io/2024/07/05/How-To-Develop-A-PlayStation-4-Emulator(1)/)
@@ -19,7 +19,7 @@ The fourth part is graphics. AMD Graphics driver has four levels. The first leve
 
 Our command processor is designed to **simulate setting GPU registers**. These GPU registers include user data registers, blend state registers, depth state registers etc.  And we have implemented an AMD ISA converter to **parse AMD ISA and translate it into Spirv**. Finally, with these GPU registers and spirv have been prepared, we translate them into **Vulkan API** and rendering the game.
 
-## Getting Started
+# Getting Started
 
 1.Cloning the repository with `https://github.com/ShawnTSH1229/pset4.git`.
 
@@ -40,13 +40,14 @@ cmake -G "Visual Studio 17 2022" ../
     <img src="/resource/rc.png" width="50%" height="50%">
 </p>
 
-5.Add Command line to the PSET4:
+5.Add the command line to the PSET4:
 
-`-e H:\pset4\build\uroot\eboot.bin`
+`-e H:\xxxxxx\eboot.bin`
 
-6.Run
+6.Compile And Run
 
-result:
+# Result
+
 <p align="center">
     <img src="/resource/PS4Emulator.png" width="75%" height="75%">
 </p>
