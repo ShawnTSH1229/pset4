@@ -7,7 +7,7 @@ Tiny Play Station4 Emulator
 
 # Overview
 
-PSET4 is a tiny PlayStation 4 emulator. I wrote this project for **graphics driver** learning. There are many open source PS4 emulators, such as FPCS4 and GPCS4. These projects helped me greatly during PSET4 programming.  Skelattack is the only game I have tested. Other games are not guaranteed to run successfully. 
+PSET4 is a tiny PlayStation 4 emulator. I wrote this project for **graphics driver** learning. There are many open source PS4 emulators, such as FPCS4 and GPCS4. These projects helped me greatly during PSET4 programming.  **Skelattack** is the only game I have tested. Other games are not guaranteed to run successfully. 
 
 Our project consists of four parts. The first part is **load and parse the ELF**. PS4 uses an extended ELF format named **SELF (Signed Executable and Linkable Format)** to store the executable file. We convert SELF to ELF and parse it to get information about the game program, such as the symbols, used libraries and initial parameters. Then, we allocate virtual memory and load the modules into memory.
 
@@ -20,3 +20,33 @@ The fourth part is graphics. AMD Graphics driver has four levels. The first leve
 Our command processor is designed to **simulate setting GPU registers**. These GPU registers include user data registers, blend state registers, depth state registers etc.  And we have implemented an AMD ISA converter to **parse AMD ISA and translate it into Spirv**. Finally, with these GPU registers and spirv have been prepared, we translate them into **Vulkan API** and rendering the game.
 
 ## Getting Started
+
+1.Cloning the repository with `https://github.com/ShawnTSH1229/pset4.git`.
+
+2.Configuring the build
+
+```shell
+# Create a build directory
+mkdir build
+cd build
+
+cmake -G "Visual Studio 17 2022" ../
+```
+
+3.Download the game (**Skelattack**) from this [<u>**website**</u>](https://dlpsgame.com/skelattack-ps4-pkg/). 
+
+4.Unpack the game using [<u>**LibOrbisPkg**</u>](https://github.com/maxton/LibOrbisPkg)
+<p align="center">
+    <img src="/resource/rc.png" width="50%" height="50%">
+</p>
+
+5.Add Command line to the PSET4:
+
+`-e H:\pset4\build\uroot\eboot.bin`
+
+6.Run
+
+result:
+<p align="center">
+    <img src="/resource/PS4Emulator.png" width="75%" height="75%">
+</p>
