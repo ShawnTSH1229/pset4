@@ -1,8 +1,9 @@
 # pset4
 Tiny Play Station4 Emulator
 
-[<u>**PSET4 Development Blog: ELF Loader and Dynamic Linker.*</u>](https://shawntsh1229.github.io/2024/07/05/How-To-Develop-A-PlayStation-4-Emulator(1)/)
-[<u>**PSET4 Development Blog: Graphics Driver And GPU Simulation.*</u>](https://shawntsh1229.github.io/2024/07/07/How-To-Develop-A-PlayStation-4-Emulator-2/)
+[<u>**PSET4 Development Blog: ELF Loader and Dynamic Linker.**</u>](https://shawntsh1229.github.io/2024/07/05/How-To-Develop-A-PlayStation-4-Emulator(1)/)
+
+[<u>**PSET4 Development Blog: Graphics Driver And GPU Simulation.**</u>](https://shawntsh1229.github.io/2024/07/07/How-To-Develop-A-PlayStation-4-Emulator-2/)
 
 # Overview
 
